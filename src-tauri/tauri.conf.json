@@ -1,0 +1,80 @@
+{
+	"build": {
+		"beforeDevCommand": "yarn dev",
+		"beforeBuildCommand": "yarn build",
+		"devPath": "http://localhost:1420",
+		"distDir": "../dist"
+	},
+	"package": {
+		"productName": "KH3ModTools",
+		"version": "0.0.0"
+	},
+	"tauri": {
+		"allowlist": {
+			"all": true
+		},
+		"bundle": {
+			"active": true,
+			"category": "DeveloperTool",
+			"copyright": "",
+			"deb": {
+				"depends": []
+			},
+			"externalBin": [],
+			"icon": [
+				"icons/32x32.png",
+				"icons/128x128.png",
+				"icons/128x128@2x.png",
+				"icons/icon.icns",
+				"icons/icon.ico"
+			],
+			"identifier": "com.kh3modding.tool",
+			"longDescription": "",
+			"macOS": {
+				"entitlements": null,
+				"exceptionDomain": "",
+				"frameworks": [],
+				"providerShortName": null,
+				"signingIdentity": null
+			},
+			"resources": [],
+			"shortDescription": "",
+			"targets": "all",
+			"windows": {
+				"certificateThumbprint": null,
+				"digestAlgorithm": "sha256",
+				"timestampUrl": ""
+			}
+		},
+		"security": {
+			"csp": null
+		},
+		"updater": {
+			"active": false
+		},
+		"windows": [
+			{
+				"fullscreen": false,
+				"height": 600,
+				"resizable": true,
+				"title": "KH3ModTools",
+				"width": 800,
+				"visible": false
+			},
+			{
+				"width": 600,
+				"height": 300,
+				"decorations": false,
+				"url": "splashscreen.html",
+				"label": "splashscreen",
+				"resizable": false,
+				"center": true,
+				"transparent": true
+			}
+		],
+		"systemTray": {
+			"iconPath": "icons/icon.png",
+			"iconAsTemplate": true
+		}
+	}
+}

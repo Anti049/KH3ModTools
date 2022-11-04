@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'KHCommand';
+	src: url('/fonts/KHCommand.otf');
+}
+
+:root {
+	background: #00000000;
+}
+
+@keyframes slide {
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(-900px, -450px); /* The image width */
+	}
+}
+.splash-background {
+	background-image: url('/images/KH3Pattern.jpg');
+	background-size: 25%;
+}
